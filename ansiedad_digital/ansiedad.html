@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansiedad Digital | Equilibrio en la Era Conectada</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="ansiedad.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="CSS/ansiedad.css">
+</head>
+
+<body>
+  <header class="header">
+      <div class="logo">
+        <img src="IMG/logo2.png" alt="Logo Ansiedad Digital" class="logo">
+        <h1>Ansiedad Digital</h1>
+      </div>
+      
+      <nav class="nav">
+        <ul>
+          <li><a href="#inicio" class="nav-button">Inicio</a></li>
+          <li><a href="#que-es" class="nav-button">Qué es</a></li>
+          <li><a href="#consejos" class="nav-button">Consejos</a></li>
+          <li><a href="#contacto" class="nav-button">Contacto</a></li>
+        </ul>
+      </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="img">
+          <img src="IMG/Adolescentes conectados.jpg" type="img">
+          Tu navegador no soporta video en HTML5.
+    
+      </div>
+
+      <div class="hero-content">
+        <h2>Bienvenido a Ansiedad Digital</h2>
+        <p>Descubre cómo recuperar tu bienestar en un mundo lleno de notificaciones, pantallas y distracciones constantes.</p>
+
+        <div class="hero-buttons">
+          <a href="#que-es" class="btn">Aprender Más</a>
+          <a href="#consejos" class="btn">Ver Consejos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="que-es" class="quienes-somos">
+      <div class="about-text">
+      <h2>¿Qué es la Ansiedad Digital?</h2>
+      <div class="content">
+        <p>La <b>ansiedad digital</b> es una respuesta emocional al uso excesivo o inadecuado de dispositivos tecnológicos. Se manifiesta a través de estrés, insomnio, dificultad para concentrarse y necesidad constante de revisar el celular o las redes sociales.</p>
+        <p>En <b>Ansiedad Digital</b> buscamos promover un uso saludable de la tecnología, fomentando la conexión real con nosotros mismos y con los demás.</p>
+      </div>
+
+      <div class="about-image">
+      </div>
+      </div>
+    </section>
+
+    <section id="consejos" class="productos">
+      <h2>🧠 Consejos para Reducir la Ansiedad Digital 🧘‍♀️</h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="descanso">Descanso Digital</button>
+        <button class="filter-btn" data-category="bienestar">Bienestar Mental</button>
+        <button class="filter-btn" data-category="organizacion">Organización</button>
+      </div>
+
+      <div id="consejos-container"></div>
+    </section>
+
+    <div class="row">
+      <h3>Momentos de Desconexión</h3>
+      <div class="column">
+        <img src="img/naturaleza.jpg" alt="Descanso al aire libre" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/lectura.jpg" alt="Leer sin distracciones" style="width:80%; height:20%;">
+      </div>
+      <div class="column">
+        <img src="img/meditacion.jpg" alt="Meditación digital detox" style="width:80%; height:20%;">
+      </div>  
+    </div>
+
+  </main>
+
+  <aside class="promociones">
+    <h3>Tips del Mes</h3>
+    <p>📵 Esta semana intenta un <span style="font-weight:bold; color:#66ccff;">“día sin pantallas”</span> para reconectar contigo mismo.</p>
+    <p>🌿 Practica la <b>regla 20-20-20</b>: cada 20 minutos, mira algo a 20 pies (6 m) de distancia por 20 segundos.</p>
+  </aside>
+
+  <footer id="contacto">
+    <div class="footer-grid">
+      <div class="contacto">
+        <h3>Contacto</h3>
+        <address>
+          <p>
+            <i class="fa fa-envelope"></i>
+            <span style="color: #b9ddff; font-weight: bold">Correo: </span> 
+            <a href="mailto:info@ansiedaddigital.org">info@ansiedaddigital.org</a>
+          </p>
+          <p>
+            <i class="fa fa-globe"></i>
+            <span style="color: #b9ddff; font-weight: bold">Sitio: </span> 
+            <a href="https://ansiedaddigital.org" target="_blank">www.ansiedaddigital.org</a>
+          </p>
+        </address>
+      </div>
+      
+      <div class="redes-sociales">
+        <h3>Síguenos</h3>
+        <div class="redes-iconos">
+          <a href="https://www.facebook.com/ansiedaddigital" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/ansiedaddigital" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@ansiedaddigital" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <button onclick="scrollToTop()" class="scroll-to-top-btn" aria-label="Volver al inicio de la página">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+      <p class="copyright">©️ 2025 Ansiedad Digital | Todos los derechos reservados</p>
+    </div>
+  </footer>
+
+  <script src="ansiedad.js"></script>
+</body>
+</html>

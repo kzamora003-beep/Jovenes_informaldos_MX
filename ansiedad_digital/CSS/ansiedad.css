@@ -1,0 +1,347 @@
+/* 🌿 Estilo base: Ansiedad Digital */
+body {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  background-color: #f7f8fc;
+  color: #2d2d2d;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+.header {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(130, 170, 255, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  color: #5578f5;
+  text-shadow: 0 0 8px rgba(85, 120, 245, 0.3);
+}
+
+/* NAV */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #5578f5;
+  transition: width 0.3s;
+}
+
+.nav-button:hover::after {
+  width: 100%;
+}
+
+.nav-button:hover {
+  color: #5578f5;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  filter: brightness(50%) blur(1px);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(85, 120, 245, 0.8);
+  animation: glow 3s infinite alternate;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #e0e4ff;
+  margin: 15px 0 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #a3b9ff;
+  }
+  to {
+    text-shadow: 0 0 25px #5578f5, 0 0 40px #a3b9ff;
+  }
+}
+
+.btn {
+  background: linear-gradient(90deg, #6ea8fe, #5578f5);
+  color: #fff;
+  padding: 12px 25px;
+  margin: 8px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #5578f5;
+}
+
+/* SECCIÓN: QUÉ ES */
+.quienes-somos {
+  padding: 90px 10%;
+  background: #eef1ff;
+  text-align: center;
+}
+
+.quienes-somos h2 {
+  color: #5578f5;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.quienes-somos p {
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.about-image {
+background: url('../IMG/amigos\ reunidos.jpg') no-repeat center center/cover;
+  height: 400px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#bfe2f0;
+  font-size: 1.2rem;
+}
+
+
+/* CONSEJOS */
+.productos {
+  padding: 90px 10%;
+  background: #f7f8fc;
+  text-align: center;
+}
+
+.productos h2 {
+  font-size: 2rem;
+  color: #5578f5;
+  margin-bottom: 25px;
+}
+
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: transparent;
+  border: 2px solid #5578f5;
+  color: #5578f5;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: #5578f5;
+  color: #fff;
+}
+
+#consejos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* GALERÍA DE MOMENTOS */
+.row {
+  text-align: center;
+  padding: 70px 10%;
+  background-color: #eef1ff;
+}
+
+.row h3 {
+  color: #5578f5;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.column img {
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(85, 120, 245, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+/* TIPS / PROMOCIONES */
+.promociones {
+  background: linear-gradient(90deg, #5578f5, #6ea8fe);
+  color: #fff;
+  text-align: center;
+  padding: 30px 10%;
+  font-size: 1.1rem;
+  box-shadow: 0 0 25px rgba(85, 120, 245, 0.3);
+}
+
+/* FOOTER */
+footer {
+  background: #1c1f2e;
+  padding: 60px 10%;
+  color: #ddd;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer-grid h3 {
+  color: #6ea8fe;
+  margin-bottom: 10px;
+}
+
+.footer-grid a {
+  color: #a3c0ff;
+  text-decoration: none;
+}
+
+.footer-grid a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ICONOS REDES */
+.redes-iconos a {
+  font-size: 1.8rem;
+  margin-right: 15px;
+  color: #6ea8fe;
+  transition: color 0.3s;
+}
+
+.redes-iconos a:hover {
+  color: #a3b9ff;
+}
+
+/* BOTÓN SCROLL TOP */
+.scroll-to-top-btn {
+  background: #6ea8fe;
+  border: none;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.scroll-to-top-btn:hover {
+  background: #5578f5;
+  transform: scale(1.1);
+}
+
+/* COPYRIGHT */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav ul {
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    display: none;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .nav ul.active {
+    display: block;
+  }
+
+  .footer-grid {
+    flex-direction: column;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
